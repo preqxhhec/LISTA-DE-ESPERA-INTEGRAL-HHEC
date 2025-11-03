@@ -94,7 +94,7 @@ const especialistas = {
     ],
 
 
-    "OTORRINO": [
+    "ORL": [
       "DR. ORLANDO DAWAHRE ACEVEDO",
       "DRA. MADELEIN MACHADO DELGADO",
       "OTRO"

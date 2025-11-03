@@ -1,0 +1,406 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Corregido de #ffff a #ffffff */
+  margin: 0;
+  background: linear-gradient(to right, #007bff, #00c6ff, #28a745,#ffc107);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Imagen detrás del contenido */
+  min-height: 100vh; /* Cambia height: 100vh a min-height: 100vh */
+}
+
+.acceso {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: #f2f4f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+.botonpwd {
+  width: auto;
+  margin: 10px 0 0 0; /* Simplificado: solo margen superior */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #4CAF50;
+}
+
+
+
+.botonpwd:hover {
+  background-color: #005600;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  margin-left: 70px;
+
+}
+
+.img{
+   width: 300px;
+    margin-right: 50px;
+}
+
+
+
+.form {
+  width: 650px;
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: #f7f4f4; /* Simplificado rgb(247, 244, 244) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  display: none; /* Mantenido según tu código */
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.formImg2 {
+    display: flex;
+    flex-direction: row; /* Aligns elements horizontally */
+    align-items: center; /* Centers elements vertically within the container */
+    justify-content: flex-start; /* Aligns content to the left */
+    gap: 10px; /* Maintains spacing between image and heading */
+    width: 100%; /* Ensures container takes full width (adjust as needed) */
+}
+
+.img2 {
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    width: 120px; /* Specific width as provided */
+}
+
+.H1 {
+    margin: 0; /* Removes default margin for cleaner alignment */
+    flex: 1; /* Allows H1 to take up remaining space */
+    text-align: center; /* Centers the text within the H1's space */
+}
+
+
+.divFecha {
+  padding-bottom: 10px;
+  padding-right: 21px;
+ 
+
+}
+
+.especialidades {
+  padding: 3px;
+  width: 41%;
+}
+
+.fecha {
+  padding: 3px;
+}
+
+
+.nombre{
+    width: 70%;
+     padding: 3px;
+  
+   }
+
+   .rut{
+    width: 20%;
+     padding: 3px;
+   }
+
+   .edad{
+   width: 13.5%; 
+    padding: 3px;
+   }
+
+
+   .Medicamentos{
+    margin-left:140px ;
+   }
+
+   .ttPatologiasCronicas, .ttmedicamentos {
+    width: 48%;
+    max-height: 125px;
+    overflow-y: hidden;
+    resize: none;
+    }
+    
+    
+   .comuna{
+    width: 21%;
+    margin-left: 6px;
+    padding: 3PX;
+    }
+
+
+    .direccion {
+    width: 48.7%;
+    padding: 3PX;
+    }
+
+    .contacto {
+      padding: 3PX;
+    }
+    .email {
+    width: 47.1%;
+    padding: 3PX;
+    }
+    
+    
+    .especialista {
+      width: 75%;
+      padding: 3PX;
+    }
+ 
+    .dx{
+      margin-left: 34px;
+      width: 73.5%;
+      padding: 3PX;
+    }
+
+    .cx{
+      margin-left:76.5px ;
+      width: 73.5%;
+      padding: 3PX;
+    }
+
+    .lateralidad {
+      margin-left: 39px;
+      width: 75%;
+      padding: 3PX;
+    }
+
+
+
+    .fechaEpa{
+      width: 30%;
+      padding: 3PX;
+      
+    }
+
+
+    .estatusEpa{
+      width: 76%;
+      padding: 3PX;
+      margin-left: 30PX;
+    }
+
+    .anestesiologo{
+      width: 76%;
+      padding: 3PX;
+      }
+
+
+     .divAnestesiologo{
+       padding-bottom: 10px;
+     }
+     
+    
+
+
+    .estatusTabla {
+    
+    padding: 3PX;
+    width: 76%;
+    margin-left: 11PX;
+    }
+
+
+
+
+    .divreg{
+      text-align: end;
+      padding-top: 20px;
+      padding-bottom: 30px;
+     
+    }
+
+    .reg {
+      width: 40%;
+       padding: 3px;
+    }
+
+fieldset {
+  border: 1px solid black !important;
+
+}
+
+
+
+
+
+
+/* Estilos para el modal emergente */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: medium;
+}
+
+
+/* Estilos para el modal */
+.modal2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content2 {
+ background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: medium;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    * {
+  margin-top: 2px !important;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .ttobservaciones{
+    width: 99%;
+    max-height: 225px;
+    overflow-y: hidden;
+    resize: none;
+  
+}
+
+
+
+
+
+.BTN, .BTNR{
+        width: auto;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+
+
+.botones{
+            display: flex;
+           
+          
+            
+
+        }
+
+        .BTN:hover{
+            background-color: #005600;
+                }
+                .BTNR:hover{
+                    background-color: #005600;
+                        }
+
+                        .botonpwd:hover{
+                            background-color: #005600;
+                                }
+
+
+
+
+
+
+.firma{
+  padding-top: 20px;
+  text-align: center;
+}

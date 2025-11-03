@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img class="img" src="HHEC.png">
+    <link rel="stylesheet" href="styles.css">
+     
+    
+
+    <title>REGISTRO LISTA DE ESPERA</title>
+ </head>
+ <body>
+    
+        <div id="acceso" class="acceso">
+            <h2>ACCESO RESTRINGIDO</h2>
+            <input type="password" id="password" placeholder="Contraseña">
+            <button onclick="verificarContraseña()" class="botonpwd">OK</button>
+        </div>
+
+
+
+         <form id="form" class="form" name="form" action="https://script.google.com/macros/s/AKfycbxZo7RwWMEbDjZ-vpt-LdvIHxiw-c2LUfXcWb_N0CFB3Vn3q42WlAG0OmA6OcHLbSBd7w/exec" method="post">
+
+        <div class="formImg2"> 
+        <img class="img2" src="HHEC.png">   
+    <h1 class="H1">REGISTRO LISTA DE ESPERA ILLAPEL</h1>
+
+    
+
+</div>
+
+
+<div class="divFecha">
+    
+
+ 
+
+    
+
+
+
+</div>
+
+
+
+<fieldset class="fieldset1">
+    <div class="divFecha">
+
+
+      <label for="especialidades">ESPECIALIDAD:</label>
+<select id="especialidades" class="especialidades" name="especialidad">
+    <option value="">Seleccione una especialidad</option>
+    <option value="CIRUGIA GENERAL">CIRUGIA GENERAL</option>
+    <option value="CIRUGIA INFANTIL">CIRUGIA INFANTIL</option>
+    <option value="GINECOLOGIA">GINECOLOGIA</option>
+    <option value="MAXILOFACIAL">MAXILOFACIAL</option>
+    <option value="OFTALMOLOGIA">OFTALMOLOGIA</option>
+    <option value="OTORRINO">OTORRINO</option>
+    <option value="TRAUMATOLOGIA">TRAUMATOLOGIA</option>
+    <option value="UROLOGIA">UROLOGIA</option>
+</select>
+       
+      <label for="fecha" class="fecha" name="fecha">FECHA IND QX</label>
+      <input type="date" name="fecha" id="fecha" class="fecha">
+
+    </div>
+
+    <div class="divNombre">
+      <label for="nombre" class="label">NOMBRE Y APELLIDO</label>
+      <input type="text" class="nombre" name="nombre" required>
+      
+    </div>
+
+    <div class="divRut">
+    <label for="rut" class="label">RUT</label>
+      <input type="text" class="rut" name="rut" required placeholder="Sin (.) con (-)">
+      <label for="fechaNacimiento" class="label">FECHA DE NACIMIENTO</label>
+      <input type="date" id="fechaNacimiento" class="date" name="fechaNacimiento" onchange="calcularEdad()">
+      <label for="edad" class="FechaNacimiento" name="FechaNacimiento">Edad:</label>
+      <input type="text" id="edad" class="edad" name="edad" readonly>
+    </div>
+
+</fieldset>
+
+<fieldset class="fieldset2">
+
+    <div class="divPatologiasCronicasMed">
+        <label for="PatologiasCronicas" class="divPatologiasCronicas" name="divPatologiasCronicas">PATOLOGIAS CRONICAS</label>
+        <label for="Medicamentos" class="Medicamentos" name="Medicamentos">MEDICAMENTOS</label>
+    </div>
+
+      <div class="divtt1">
+      <textarea class="ttPatologiasCronicas" name="ttPatologiasCronicas" id="ttPatologiasCronicas" rows="6" placeholder="Escriba NINGUNO si es el caso" required></textarea>
+      <textarea class="ttmedicamentos" name="ttmedicamentos" id="ttmedicamentos" rows="6" placeholder="Sea lo más específico posible" required></textarea>
+            
+   </div>
+        
+      
+
+</fieldset>
+
+<fieldset class="fieldset3">
+
+      <div class="divLabDireccionComuna">
+      <label for="comuna" class="labcomuna" name="comuna">COMUNA</label>
+      <select name="comuna" id="comuna" class="comuna" required>
+        <option value=""></option>
+                    <option value="ILLAPEL">ILLAPEL</option>
+                    <option value="SALAMANCA">SALAMANCA</option>
+                    <option value="CANELA">CANELA</option>
+                    <option value="LOS VILOS">LOS VILOS</option>
+                    <option value="OTRO">OTRO</option>
+        
+
+
+      </select>
+        <label for="direccion" class="labdireccion" name="direccion">DIRECCION</label>
+        <input type="text" class="direccion" name="direccion" id="direccion" placeholder="Sea lo más específico posible" required></input>
+    
+      </div>
+
+
+
+
+<div class="divContactoEmail">
+      
+      <label for="contacto">TELEFONO</label>
+      <input type="text" class="contacto" name="contacto" required>
+      <label for="email">E-MAIL</label>
+     <input type="email" class="email" name="email">
+    </div>
+   
+    </fieldset>
+
+    <fieldset class="fieldset4">
+    
+
+
+<label for="especialista">MEDICO TRATANTE</label>
+<select id="especialista" class="especialista" name="especialista">
+    <option value="">Seleccione un especialista</option>
+</select>
+
+
+
+
+<div>
+    <label for="diagnostico">DIAGNÓSTICO</label>
+    <input type="text" class="dx" name="dx" required>
+</div>
+
+
+   
+<div>     
+    <label for="intervencion">CIRUGIA</label>
+    <input type="text" class="cx" name="cx" required>
+  </div>
+
+
+    <div class="divLat"></div>
+    
+        <label for="lateralidad">LATERALIDAD</label>
+        <select class="lateralidad" name="lateralidad" id="lateralidad" required>
+          <option value=""></option>
+          <option value="DERECHA">DERECHA</option>
+          <option value="IZQUIERDA">IZQUIERDA</option>
+          <option value="BILATERAL">BILATERAL</option>
+          <option value="NO APLICA">NO APLICA</option>
+        </select>
+    </div>
+    
+
+
+
+    
+</fieldset>
+    
+
+
+
+<fieldset class="fieldset5">
+
+
+
+<div>
+
+   <label for="fecha" class="fechaEpa" name="fechaEpa">FECHA EPA SI EL ESTATUS ES AGENDADA</label>
+      <input type="date" name="fechaEpa" id="fechaEpa" class="fechaEpa">
+</div>
+
+
+
+       <div>
+        <label for="estatusEpa">ESTATUS EPA</label>
+        <select class="estatusEpa" name="estatusEpa" id="estatusEpa" required>
+          <option value=""></option>
+          <option value="PENDIENTE">PENDIENTE</option>
+          <option value="AGENDADO">AGENDADO</option>
+          <option value="REALIZADO">REALIZADO</option>
+          <option value="NO APLICA">NO APLICA</option>
+         
+        </select>
+    
+
+<label for="estatusTabla">ESTATUS TABLA</label>
+            <select class="estatusTabla" name="estatusTabla" id="estatusTabla" required>
+              <option value=""></option>
+              <option value="PROGRAMABLE">PROGRAMABLE</option>
+              <option value="NO PROGRAMABLE">NO PROGRAMABLE</option>
+              <option value="ACTUALIZAR">ACTUALIZAR</option>
+              <option value="OPERADO">OPERADO</option>
+              <option value="RECHAZO">RECHAZO</option>
+              <option value="EGRESO">EGRESO</option>
+              <option value="DERIVAR">DERIVAR</option>
+              <option value="PENDIENTE EPA">PENDIENTE EPA</option>
+              <option value="EXCEPTUADO">EXCEPTUADO</option>
+              <option value="BOX">BOX</option>
+            </select>
+
+</div>
+
+
+
+<div class="divAnestesiologo">
+    <label>ANESTESIOLOGO</label>
+    <select name="anestesiologo" id="anestesiologo" class="anestesiologo">
+        <option value=""></option>
+                  <option value="DR. DANILO NAVA">DR. DANILO NAVA</option>
+                  <option value="DR. PEDRO GOLES">DR. PEDRO GOLES</option>
+                  <option value="DRA. MARIANGEL YANES">DRA. MARIANGEL YANES</option>
+                  <option value="DRA. RAQUEL VALERO">DRA. RAQUEL VALERO</option>
+                  <option value="DRA. MARINELA RICCOBONO">DRA. MARINELA RICCOBONO</option>
+                  <option value="DR. ROBERTO OROZCO">DR. ROBERTO OROZCO</option>
+                  <option value="DR. DANIEL RIQUELME">DR. DANIEL RIQUELME</option>
+                  <option value="DR. ANGEL MONTIEL">DR. ANGEL MONTIEL</option>
+                  <option value="OTRO">OTRO</option>
+     
+    </select>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="divObservaciones">
+    <label for="Observaciones" class="Observaciones" name="Observaciones">OBSERVACIONES</label>
+</div>
+<div>
+    <textarea class="ttobservaciones" name="ttobservaciones" id="ttobservaciones" rows="8" placeholder="Sea lo más específico posible" required></textarea>
+  
+</div>
+
+
+
+</div>
+
+<div>
+    <label for="priorizacion" class="priorizacion">PRIORIDAD</label>
+    <select name="priorizacion" id="priorizacion" class="priorizacion" required>
+      <option value=""></option>
+      <option value="P1">P1</option>
+      <option value="P2">P2</option>
+      <option value="P3">P3</option>
+    </select>
+
+    <label for="ges" class="ges" >GES</label>
+    <select name="ges" id="ges" class="ges" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+    <label for="taco">TACO</label>
+    <select name="taco" id="taco" class="taco" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+    <label for="asa">ASA</label>
+    <select name="asa" id="asa" class="asa" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+    <label for="ekg">EKG</label>
+    <select name="ekg" id="ekg" class="ekg" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+    <label for="rx">RX</label>
+    <select name="rx" id="rx" class="rx" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+    <label for="eco">ECO</label>
+    <select name="eco" id="eco" class="eco" required>
+      <option value=""></option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select>
+
+
+
+    </div>
+
+
+
+</div>
+
+<div class="divreg">
+<label for="registro">REGISTRADO POR: </label>
+<select name="reg" id="reg" class="reg" required>
+<option value=""></option>
+                    <option value="PAULA LEIVA">PAULA LEIVA</option>
+                    <option value="EMIKER PALMI">EMIKER PALMI</option>
+                    <option value="SANDRA GARMENDIA">SANDRA GARMENDIA</option>
+                    <option value="MILEIDY MORALES">MILEIDY MORALES</option>
+                    <option value="MAGALY MENESES">MAGALY MENESES</option>
+                    <option value="JOCELYN CACERES">JOCELYN CACERES</option>
+  <option value="OTRO">OTRO</option>
+</select>
+</div> 
+
+
+
+<div class="botones">
+   
+    <button type="reset" class="BTNR" name="BTNR" id="BTNR" >NUEVO PACIENTE</button> 
+    <button type="submit" class="BTN" name="BTN" id="BTN">REGISTRAR</button>
+</div>
+</fieldset>
+
+
+
+
+
+<!-- Agrega el modal emergente -->
+<div id="loadingModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <p>Buscando...</p>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="modal-enviando" class="modal2">
+  <div class="modal-content2">
+    <h2>Enviando datos...</h2>
+    <p>Por favor, espere...</p>
+  </div>
+</div>
+
+
+
+<!-- campo oculto para inserta formula para calcular numero de registro o ID -->
+<input type="hidden" name="numRegistro">
+
+<!-- campo oculto para inserta formula para calcular T.ESPERA -->
+<input type="hidden" name="tEspera">
+
+<!-- campo oculto para inserta formula para calcular EDAD -->
+<input type="hidden" name="edad">
+
+<!-- campo oculto para inserta formula para calcular ESPERA PROGRAMABLE -->
+<input type="hidden" name="espProg">
+
+
+<div class="firma">
+Dr. Danilo A. Nava La C. Jéfe del Proceso Quirúrgico Hospital de illapel.
+</div>
+         </form>
+
+         <script src="script.js"></script>
+
+
+         </body>
+</html>
